@@ -1,7 +1,7 @@
-package com.example.bookaroom.data.network
+package com.example.bookaroom.data.datasources.network
 
-import com.example.bookaroom.data.RoomEntity
-import com.example.bookaroom.data.RoomEntityWrapper
+import com.example.bookaroom.data.entities.RoomEntity
+import com.example.bookaroom.data.entities.RoomEntityWrapper
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.whenever
 import io.reactivex.rxjava3.core.Completable

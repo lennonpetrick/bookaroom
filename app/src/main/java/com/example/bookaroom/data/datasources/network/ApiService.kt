@@ -1,6 +1,6 @@
-package com.example.bookaroom.data.network
+package com.example.bookaroom.data.datasources.network
 
-import com.example.bookaroom.data.RoomEntityWrapper
+import com.example.bookaroom.data.entities.RoomEntityWrapper
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET

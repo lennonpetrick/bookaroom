@@ -1,6 +1,6 @@
-package com.example.bookaroom.data.local
+package com.example.bookaroom.data.datasources.local
 
-import com.example.bookaroom.data.RoomEntity
+import com.example.bookaroom.data.entities.RoomEntity
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.whenever
 import io.reactivex.rxjava3.core.Completable

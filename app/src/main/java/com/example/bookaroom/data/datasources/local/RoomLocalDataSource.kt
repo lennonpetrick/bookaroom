@@ -1,6 +1,6 @@
-package com.example.bookaroom.data.local
+package com.example.bookaroom.data.datasources.local
 
-import com.example.bookaroom.data.RoomEntity
+import com.example.bookaroom.data.entities.RoomEntity
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
