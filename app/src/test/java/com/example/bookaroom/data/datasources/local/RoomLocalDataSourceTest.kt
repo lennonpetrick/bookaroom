@@ -21,6 +21,29 @@ internal class RoomLocalDataSourceTest {
     private lateinit var subject: RoomLocalDataSource
 
     @Test
+    fun `When storing a list of rooms, then a completable it returned`() {
+        val rooms = listOf(mock<RoomEntity>())
+        whenever(roomDao.storeRooms(rooms)).thenReturn(Completable.complete())
+
+        subject.storeRooms(rooms)
+            .test()
+            .assertNoErrors()
+            .assertComplete()
+    }
+
+    @Test
+    fun `When storing a list of rooms fails, then an error is returned`() {
+        val exception = Exception()
+        val rooms = listOf(mock<RoomEntity>())
+        whenever(roomDao.storeRooms(rooms)).thenReturn(Completable.error(exception))
+
+        subject.storeRooms(rooms)
+            .test()
+            .assertNoValues()
+            .assertError(exception)
+    }
+
+    @Test
     fun `When getting available rooms, then a list is returned`() {
         val rooms = listOf(mock<RoomEntity>())
         whenever(roomDao.getAvailableRooms()).thenReturn(Single.just(rooms))

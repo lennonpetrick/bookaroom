@@ -7,6 +7,10 @@ import javax.inject.Inject
 
 internal class RoomLocalDataSource @Inject constructor(private val roomDao: RoomDao) {
 
+    fun storeRooms(rooms: List<RoomEntity>): Completable {
+        return roomDao.storeRooms(rooms)
+    }
+
     fun getAvailableRooms(): Single<List<RoomEntity>> {
         return roomDao.getAvailableRooms()
     }
