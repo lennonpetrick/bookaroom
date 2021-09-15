@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Book a room</string>
+    <string name="spots_remaining">%d spots remaining</string>
 </resources>
