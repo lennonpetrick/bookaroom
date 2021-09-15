@@ -38,6 +38,10 @@ android {
             useJUnitPlatform()
         }
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {

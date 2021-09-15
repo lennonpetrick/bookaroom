@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Book a room</string>
     <string name="spots_remaining">%d spots remaining</string>
+    <string name="book">Book!</string>
+    <string name="default_error_message">Something went wrong :(</string>
+    <string name="booked_message">Your room was booked!</string>
 </resources>
